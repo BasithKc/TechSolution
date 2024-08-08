@@ -29,4 +29,15 @@
 
    ```bash
    git clone https://github.com/BasithKc/TechSolution.git
-   cd project-name
+   cd TechSolution
+ 2. **Run the Project**
+
+   ```bash
+     cd frontend
+     ng serve
+3. **Run backend**
+
+   ```bash
+   cd ..
+   cd backend
+   node app.js
