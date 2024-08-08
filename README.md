@@ -30,11 +30,12 @@
    ```bash
    git clone https://github.com/BasithKc/TechSolution.git
    cd TechSolution
- 2. **Run the Project**
+2. **Run the Project**
 
    ```bash
      cd frontend
      ng serve
+   
 3. **Run backend**
 
    ```bash
