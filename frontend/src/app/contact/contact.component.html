@@ -1,0 +1,28 @@
+<section class="contact mt-10">
+  <h2 class="text-center text-[2rem] font-bold">Contact Us</h2>
+  <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+      <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" required [(ngModel)]="contact.name" name="name" #name="ngModel">
+          <div *ngIf="name.invalid && (name.dirty || name.touched)">
+              <div class="text-red" *ngIf="name.errors?.['required']">Name is required.</div>
+          </div>
+      </div>
+      <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required email [(ngModel)]="contact.email" name="email" #email="ngModel">
+          <div *ngIf="email.invalid && (email.dirty || email.touched)">
+              <div class="text-red" *ngIf="email.errors?.['required']">Email is required.</div>
+              <div class="text-red" *ngIf="email.errors?.['email']">Invalid email format.</div>
+          </div>
+      </div>
+      <div>
+          <label for="message">Message:</label>
+          <textarea id="message" required [(ngModel)]="contact.message" name="message" #message="ngModel"></textarea>
+          <div *ngIf="message.invalid && (message.dirty || message.touched)">
+              <div class="text-red" *ngIf="message.errors?.['required']">Message is required.</div>
+          </div>
+      </div>
+      <button type="submit" [disabled]="contactForm.invalid">Submit</button>
+  </form>
+</section>

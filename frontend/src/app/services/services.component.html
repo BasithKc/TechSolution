@@ -1,0 +1,10 @@
+<section class="w-full p-3 md:px-[50px] mt-10">
+  <h2 class="text-[2.5rem] font-bold text-center">Our Services</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+    <div *ngFor="let service of services" class="border-2 border-slate-300 mt-10 rounded-lg transition-shadow duration-300 hover:shadow-xl hover:scale-105">
+      <img class="w-full h-[250px] object-cover rounded-t-lg" [src]="service.image" alt="{{ service.title }}">
+      <h3 class="text-[1.2rem] mt-2 font-bold text-center">{{ service.title }}</h3>
+      <p class="text-center p-2">{{ service.content }}</p>
+    </div>
+  </div>
+</section>
