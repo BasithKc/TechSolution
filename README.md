@@ -30,6 +30,7 @@
    ```bash
    git clone https://github.com/BasithKc/TechSolution.git
    cd TechSolution
+   
 2. **Run the Project**
 
    ```bash
@@ -37,8 +38,8 @@
      ng serve
    
 3. **Run backend**
-
+   Open new termainal
+   
    ```bash
-   cd ..
    cd backend
    node app.js
